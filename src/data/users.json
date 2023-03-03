@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "user": "Elon Reeve Musk",
+        "tweets": 777,
+        "followers": 100500,
+        "avatar": "https: //cdn-icons-png.flaticon.com/512/1998/1998592.png"
+    },
+    {
+        "id": 2,
+        "user": "Bill Gates",
+        "tweets": 1636,
+        "followers": 53800000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png"
+    },
+    {
+        "id": 3,
+        "user": "Jeff Bezos",
+        "tweets": 245,
+        "followers": 1830000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png"
+    },
+    {
+        "id": 4,
+        "user": "Mark Zuckerberg",
+        "tweets": 482,
+        "followers": 12400000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png"
+    },
+    {
+        "id": 5,
+        "user": "Tim Cook",
+        "tweets": 217,
+        "followers": 11100000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png"
+    },
+    {
+        "id": 6,
+        "user": "Satya Nadella",
+        "tweets": 273,
+        "followers": 2820000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png"
+    },
+    {
+        "id": 7,
+        "user": "Sundar Pichai",
+        "tweets": 52,
+        "followers": 1600000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png"
+    },
+    {
+        "id": 8,
+        "user": "Larry Page",
+        "tweets": 92,
+        "followers": 1210000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png"
+    },
+    {
+        "id": 9,
+        "user": "Sergey Brin",
+        "tweets": 219,
+        "followers": 1980000,
+        "avatar": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png"
+    }
+]
