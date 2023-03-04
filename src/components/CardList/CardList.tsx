@@ -1,22 +1,17 @@
 import React from "react";
 import users from "../../data/users.json";
-import Card from "../Card/Card";
-import { User } from "../../interfaces/common";
+import CardItem from "../CardItem/CardItem";
+import { IUser } from "../../interfaces/common";
 import { Grid } from "@mui/material";
 
-function CardList() {
+const CardList: React.FC = () => {
   return (
-    <Grid
-      container
-      component='ul'
-      spacing={{ xs: 2, md: 3 }}
-      columns={{ xs: 4, sm: 8, md: 12 }}
-    >
+    <Grid container component="ul" spacing={{ xs: 2, md: 3, alignItems:"stretch" } }>
       {users.map((user) => (
-        <Card user={user} key={user.id} />
+        <CardItem user={user} key={user.id} />
       ))}
     </Grid>
   );
-}
+};
 
 export default CardList;
