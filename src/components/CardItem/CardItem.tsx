@@ -71,11 +71,11 @@ const CardItem: React.FC<ICardItemProps> = ({ user }) => {
         >
           <Box
             component="img"
-            src="/src/assets/Logo1x.png"
+            src="/public/Logo1x.png"
             srcSet="
-              /src/assets/Logo1x.png 1x,
-              /src/assets/Logo2x.png 2x,
-              /src/assets/Logo3x.png 3x
+              /public/Logo1x.png 1x,
+              /public/Logo2x.png 2x,
+              /public/Logo3x.png 3x
             "
             alt="Logo"
             width={76}
