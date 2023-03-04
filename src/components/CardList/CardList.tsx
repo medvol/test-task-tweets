@@ -1,12 +1,11 @@
 import React from "react";
 import users from "../../data/users.json";
 import CardItem from "../CardItem/CardItem";
-import { IUser } from "../../interfaces/common";
 import { Grid } from "@mui/material";
 
 const CardList: React.FC = () => {
   return (
-    <Grid container component="ul" spacing={{ xs: 2} }>
+    <Grid container component="ul" spacing={{ xs: 2 }}>
       {users.map((user) => (
         <CardItem user={user} key={user.id} />
       ))}

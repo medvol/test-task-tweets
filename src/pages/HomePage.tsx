@@ -7,7 +7,7 @@ import { theme } from "../services/theme";
 function HomePage() {
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth='xl'>
+      <Container component="main" maxWidth="xl">
         <CardList />
       </Container>
     </ThemeProvider>

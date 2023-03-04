@@ -11,13 +11,20 @@ import { ICardItemProps } from "../../interfaces/common";
 import { loadLocal, saveLocal } from "../../services/storage";
 
 const CardItem: React.FC<ICardItemProps> = ({ user }) => {
-  const [clicked, setClicked] = useState<boolean>(false);
+  const [clicked, setClicked] = useState<boolean>(
+    Boolean(loadLocal(`${user.id}`))
+  );
   const [followers, setFollowers] = useState<number>(
-    loadLocal("followers") ?? user.followers
+    loadLocal(`${user.id}`) ?? user.followers
   );
 
   useEffect(() => {
-    saveLocal("followers", followers);
+    if (clicked) {
+      saveLocal(`${user.id}`, followers);
+    }
+    if (!clicked) {
+      localStorage.removeItem(`${user.id}`);
+    }
   }, [followers]);
 
   const handleClick = () => {
@@ -75,9 +82,9 @@ const CardItem: React.FC<ICardItemProps> = ({ user }) => {
             height={22}
             sx={{
               position: "absolute",
-              display: 'block',
+              display: "block",
               top: "20px",
-              left:"20px"
+              left: "20px",
             }}
           />
           <Box
