@@ -6,7 +6,7 @@ import { Grid } from "@mui/material";
 
 const CardList: React.FC = () => {
   return (
-    <Grid container component="ul" spacing={{ xs: 2, md: 3, alignItems:"stretch" } }>
+    <Grid container component="ul" spacing={{ xs: 2} }>
       {users.map((user) => (
         <CardItem user={user} key={user.id} />
       ))}

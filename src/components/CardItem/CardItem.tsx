@@ -63,6 +63,24 @@ const CardItem: React.FC<ICardItemProps> = ({ user }) => {
           }}
         >
           <Box
+            component="img"
+            src="/src/assets/Logo1x.png"
+            srcSet="
+              /src/assets/Logo1x.png 1x,
+              /src/assets/Logo2x.png 2x,
+              /src/assets/Logo3x.png 3x
+            "
+            alt="Logo"
+            width={76}
+            height={22}
+            sx={{
+              position: "absolute",
+              display: 'block',
+              top: "20px",
+              left:"20px"
+            }}
+          />
+          <Box
             sx={{
               position: "absolute",
               display: "flex",
@@ -99,8 +117,6 @@ const CardItem: React.FC<ICardItemProps> = ({ user }) => {
               sx={{
                 width: 62,
                 height: 62,
-                background:
-                  "linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%)",
               }}
             />
           </Box>
@@ -120,7 +136,7 @@ const CardItem: React.FC<ICardItemProps> = ({ user }) => {
               left: 0,
               width: "100%",
               height: 8,
-              backgroundColor: "#EBD8FF",
+              backgroundColor: "primary.main",
               zIndex: "2",
               boxShadow:
                 " 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF",
