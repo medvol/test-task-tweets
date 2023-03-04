@@ -63,8 +63,8 @@ const CardItem: React.FC<ICardItemProps> = ({ user }) => {
             position: "relative",
             height: 214,
             backgroundImage: {
-              xs: "url(/src/assets/background1x.png)",
-              md: "url(/src/assets/background2x.png)",
+              xs: "url(/background1x.png)",
+              md: "url(/background2x.png)",
             },
             backgroundSize: "308px 168px",
           }}
